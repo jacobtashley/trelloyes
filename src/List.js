@@ -3,6 +3,11 @@ import Card from './Card'
 
 function List(props) {
     console.log(props)
+    conconst arrayOfLis = apiResponse.items.map((item) =>
+    <li key={item.id}>
+      {item.name}
+    </li>
+  )
     return(
         <section className='List'>
             <header className='List-header'>
