@@ -2,22 +2,19 @@ import React from 'react'
 import Card from './Card'
 
 function List(props) {
-    console.log(props)
-    conconst arrayOfLis = apiResponse.items.map((item) =>
-    <li key={item.id}>
-      {item.name}
-    </li>
-  )
-    return(
+    return (
         <section className='List'>
             <header className='List-header'>
                 <h2>{props.header}</h2>
             </header>
             <div className='List-cards'>
-                <Card 
-                    title={props.title}
-                    content={props.content}
-                />
+                {props.cards.map((card) =>
+                    <Card 
+                        key={card.id}
+                        title={card.title}
+                        content={card.content}
+                    />
+                )}
             </div>
         </section>
     )

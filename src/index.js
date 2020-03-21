@@ -6,6 +6,6 @@ import STORE from './store'
 
 ReactDOM.render(
     <App 
-        store= { STORE }
+        sections = { STORE }
     />, 
     document.getElementById('root'));
