@@ -1,19 +1,25 @@
 import React, { Component } from 'react';
 import './App.css';
 import List from './List'
+import STORE from './store'
 
 class App extends Component {
-
-  static defaultProps = {
-    store: {
-      lists: [],
-      allCards: {}
-    }
+  state = {
+    store: STORE
   }
 
+  // static defaultProps = {
+  //   store: {
+  //     lists: [],
+  //     allCards: {}
+  //   }
+  // }
+
   render() {
-    const { sections } = this.props
-    console.log(this.props)
+
+    const { sections } = this.state
+
+    console.log('This is State:', this.state)
     return (
       <main className="App" >
         <header className="App=header">
