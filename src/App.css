@@ -1,0 +1,23 @@
+.App-list {
+    display: flex;
+}
+.List {
+    background: red;
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+}
+
+.List-cards {
+    background: chartreuse;
+    margin: 10px;
+    padding: 10px;
+    border: black 1px solid;
+}
+
+.Card {
+    border: 1px purple solid;
+    padding: 10px;
+    margin: 10px;
+    background: white;
+}
